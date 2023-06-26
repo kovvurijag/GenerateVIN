@@ -1,0 +1,169 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+*{
+    box-sizing: border-box;
+ padding: 0;
+ margin: 0; 
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+min-height: 100vh;
+background: linear-gradient(to right, #333399, #ff00cc);
+display: flex;
+align-items: center;
+
+justify-content: center;
+    
+}
+.box {
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+
+.box::before{
+
+content: '';
+position: absolute;
+background: rgba(255, 255, 255, 0.15);
+inset: 0;
+transform: rotate(-5deg);
+z-index: -1;
+
+}
+
+.box h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.box img{
+    margin-bottom: 2rem;
+    width: 50%;
+    /* text-align: center; */
+    margin-left: 4rem;
+
+}
+
+.box label{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="number"]{
+    border: none !important;
+    outline: none !important;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+
+    transition: background 0.5s;
+}
+select {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 100px;
+    width: 100%;
+    transition: background 0.5s;
+  }
+  
+  select option {
+    background-color: white;
+  }
+
+  .box input:focus {
+    background: white;
+}
+.box button{
+
+    background: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background .5s;
+}
+
+.box button:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
+.generatebutton{
+
+    margin-top: 35px;
+    
+  }
+
+  .genrate-vin {
+    padding-top: 14px;
+    font-weight: bold;
+}
+.option{
+
+background-color: red;
+
+}
+
+.dropdown-ec {   background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+background-position: calc(100% - 34px) calc(1em + 6px), calc(100% - 30px) calc(1em + 6px), calc(100% - 1.5em) -0.5em;
+background-size: 5px 5px, 5px 5px, 1px 1.5em;
+background-repeat: no-repeat;
+}
+      
+      .dropdown-ec:focus {
+        background-image: linear-gradient(45deg, green 50%, transparent 50%), linear-gradient(135deg, transparent 50%, green 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 30px) 20px, calc(100% - 34px) 20px, calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: green;
+    outline: 0;
+      }
+      select {
+        /* for Firefox */
+        -moz-appearance: none;
+        /* for Chrome */
+        -webkit-appearance: none;
+      }
+      
+      /* For IE10 */
+      select::-ms-expand {
+        display: none;
+      }
+      button.generatebutton {
+        width: 100%;
+    }
+    
+    button.search {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+    }
+    
+    button.add  {
+        width: calc(50% - 20px);
+        margin-left: 20px;
+    }
+  
+
+  
